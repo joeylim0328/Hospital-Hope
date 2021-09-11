@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="utf-8">
+		<title>Home Page</title>
+		<link href="record.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Play&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<nav class="navtop">
+			<div>
+				<h1 style="font-family: 'Ubuntu', sans-serif;">ADD A NEW PATIENT</h1>
+                <a href="back-patientrecord.php" style="font-family: 'Ubuntu', sans-serif;"><i class="fas fa-sign-out-alt"></i>Back</a>
+			</div>
+		</nav>
+        
+
+<form action="insert_record.php" method="post" style="font-family: 'Play', sans-serif;font-weight:bold;">
+    <table class="container2">
+        <tr>
+            <td>
+                Name:
+            </td>
+            <td>
+                <input type="text" name="p_name">
+            </td>
+        <tr>
+            <td>I/C No.:</td>
+            <td><input type="text" name="p_ic_number"></td>
+        </tr>
+        <tr>
+            <td>Address:</td>
+            <td><input type="text" name="p_address"></td>
+        </tr>
+        <tr>
+            <td>Date of Birth:</td>
+            <td><input type="date" name="p_date_of_birth"></td>
+        </tr>
+        <tr>
+            <td>Gender:</td>
+            <td><input type="radio" name="gender" value="male">Male <input type="radio" name="gender" value="female">Female</td>
+        </tr>
+        <tr>
+            <td>Contact No.:</td>
+            <td><input type="text" name="p_contact_number"></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Add patient's record"></td>
+            <td><a href="patient_record.html"></a></td>
+        </tr>
+    
+    
+    
+    </table>
+    
+</form>
+        
+</body>
+</html>

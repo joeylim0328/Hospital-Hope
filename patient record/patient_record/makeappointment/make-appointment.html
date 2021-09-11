@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<!--css reference https://www.youtube.com/watch?v=2JvaoEhgbgE&t=557s-->
+
+<head>
+	<title>Make Appoinment</title>
+</head>
+
+<body>
+<form action="submit_appointment.php" method="post">
+<center>
+
+	<h1>MAKE APPOITMENT</h1>
+	
+	<table>
+		<tr>
+			<td>Name:</td>
+			<td><input type="text" name="p_name"></td>
+		</tr>
+		
+		<tr>
+			<td>I/C No.:</td>
+			<td><input type="text" name="p_ic_number"></td>
+        </tr>
+		
+		<tr>
+            <td>Contact No.:</td>
+            <td><input type="text" name="p_contact_number"></td>
+        </tr>
+		        
+		<tr>
+            <td>Specialty :</td>
+            <td>
+				<input list="hosting-plan" type="text" name="doctor_specialty">
+				<datalist id="hosting-plan">
+				<option value="test1"/>
+				<option value="test2"/>
+				<option value="test3"/>
+				</datalist>
+			</td>
+        </tr>
+		
+		<tr>
+            <td>Doctor Name :</td>
+            <td><input type="text" name="doctor_name"></td>
+        </tr>
+		
+        <tr>
+            <td>Date :</td>
+            <td><input type="date" name="p_date"></td>
+        </tr>
+		
+		<tr>
+            <td>Time :</td>
+            <td><input type="time" name="p_time"></td>
+		</tr>
+		
+		<tr>
+            <td><input type="submit" value="Submit Appoinment"></td>
+            <td><button type="button">Return</button></a></td>
+        </tr>
+	</table>
+
+</center>
+</form>
+</body>
+</html>

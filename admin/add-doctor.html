@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+	<title> Add Doctor</title>
+	<link rel="stylesheet" a href="style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+    
+<body>
+    <nav class="navtop">
+			<div>
+				<h1 style="font-family: 'Ubuntu', sans-serif;">ADD DOCTOR</h1>
+				<a href="back-admin.php" style="font-family: 'Ubuntu', sans-serif;"><i class="fas fa-sign-out-alt"></i>Back</a>
+			</div>
+		</nav>
+    
+	<div class="container3">
+        
+        <img src="person_icon.png">
+        
+		<form action="insert.php" method="POST">
+            <div class="form_input">
+              <input type="text" name="name" placeholder="Please enter doctor's name" id="name" required/>	 
+            </div>
+            
+            <div class="form_input">
+              <input type="text" name="contact" placeholder="Please enter doctor's contact no" id="contact" required/>	 
+            </div>
+            
+            <div class="form_input">
+              <input type="text" name="email" placeholder="Please enter doctor's email address" id="email" required/>
+            </div>
+            
+            <div class="form_input">
+              <input type="text" name="specialties" placeholder="Please enter doctor's specialties" id="specialties" required/>
+            </div>
+            
+            <input type="submit" type="submit" value="ADD DOCTOR" class="btn-add"/>
+            
+		</form>
+        
+	</div>
+    
+</body>
+    
+</html>

@@ -1,0 +1,231 @@
+/*REFERENCE SITE
+https://codeshack.io/secure-login-system-php-mysql/
+
+https://www.codeandcourse.com/how-to-display-data-from-mysql-database-into-html-table-using-php/
+
+https://www.codeandcourse.com/how-to-connect-html-register-form-to-mysql-database-with-php/
+
+https://www.youtube.com/watch?v=cu9zfS06Z3Q
+
+*/
+
+body{
+	margin: 0;
+	background-image: url("background.jpg");
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+	width: 500px;
+	height: 450px;
+	text-align: center;
+	margin: 0 auto;
+	background-color: rgba(132, 132, 130,0.7);
+	margin-top: 160px;
+}
+.container2{
+	width: auto;
+	height: 700px;
+	text-align: center;
+	margin: 0 auto;
+	background-color: rgba(132, 132, 130,0.7);
+	margin-top: 0px;
+    font-size: 30px;
+    
+}
+select{
+    font-size: 20px;
+    margin-top: 60px;
+}
+
+
+.container3{
+	width: 500px;
+	height: 600px;
+	text-align: center;
+	margin: 0 auto;
+	background-color: rgba(132, 132, 130,0.7);
+	margin-top: 160px;
+    margin-bottom: 60px;
+}
+.container4{
+	width: 500px;
+	height: 350px;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 160px;
+    margin-bottom: 60px;
+}
+
+.container5{
+	width: 750px;
+	height: 350px;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 160px;
+    margin-bottom: 60px;
+}
+.table{
+	width: auto;
+	height: auto;
+	text-align: center;
+	margin: 0 auto;
+	background-color: rgba(132, 132, 130,0.3);
+    color: black;
+}
+.table2{
+    width: 500px;
+	height: 350px;
+	text-align: center;
+	margin: 0 auto;
+	background-color: rgba(132, 132, 130,0.3);
+	margin-top: 500px;
+    color: black;
+    
+}
+
+.container img{
+	width: 150px;
+	height: 150px;
+	margin-top: -60px;
+}
+
+.container2 img{
+	width: 150px;
+	height: 150px;
+	margin-top: 30px;
+    /*margin-left: 50px;*/
+}
+
+.container3 img{
+	width: 150px;
+	height: 150px;
+	margin-top: -60px;
+}
+
+
+input[type="text"],input[type="password"]{
+	margin-top: 30px;
+	height: 45px;
+	width: 300px;
+	font-size: 18px;
+	margin-bottom: 20px;
+	background-color: #fff;
+	padding-left: 40px;
+}
+
+.form_input::before{	
+	font-family: "FontAwesome";
+	padding-left: 07px;
+	padding-top: 40px;
+	position: absolute;
+	font-size: 35px;
+	color: #2980b9; 
+}
+
+::placeholder {
+   font-style: italic;  
+}
+
+.form_input:nth-child(2)::before{
+
+}
+
+.btn-login{
+    margin-top: 15px;
+    font-weight: bolder;
+    border-radius: 15px;
+	padding: 15px 25px;
+	border: none;
+	background-color:#27ae60;
+	color: #fff;
+}
+
+.navtop {
+	background-color: #2f3947;
+	height: 60px;
+	width: 100%;
+	border: 0;
+
+}
+.navtop div {
+	display: flex;
+	margin: 0 auto;
+	width: 1000px;
+	height: 100%;
+}
+.navtop div h1, .navtop div a {
+	display: inline-flex;
+	align-items: center;
+    
+}
+.navtop div h1 {
+	flex: 1;
+	font-size: 24px;
+	padding: 0;
+	margin: 0;
+	color: #eaebed;
+	font-weight: normal;
+}
+.navtop div a {
+	padding: 0 20px;
+	text-decoration: none;
+	color: #c1c4c8;
+	font-weight: bold;
+}
+.navtop div a i {
+	padding: 2px 8px 0 0;
+}
+.navtop div a:hover {
+	color: #eaebed;
+}
+h2{
+    display: inline;
+    font-size: 30px;
+}
+
+h1{
+    font-size: 50px;
+    color: white;
+}
+
+
+
+.btn-add{
+    margin-top: 15px;
+    font-weight: bolder;
+    border-radius: 15px;
+	padding: 15px 25px;
+	border: none;
+	background-color:#27ae60;
+	color: #fff;
+}
+.btn-modify{
+    margin-top: 15px;
+    font-weight: bolder;
+    border-radius: 15px;
+	padding: 15px 25px;
+	border: none;
+	background-color:#27ae60;
+	color: #fff;
+}
+.btn-delete{
+    margin-top: 15px;
+    font-weight: bolder;
+    border-radius: 15px;
+	padding: 15px 25px;
+	border: none;
+	background-color:#27ae60;
+	color: #fff;
+}
+.btn-patient{
+    margin-top: 15px;
+    font-weight: bolder;
+    border-radius: 15px;
+	padding: 15px 25px;
+	border: none;
+	background-color:#27ae60;
+	color: #fff;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+	<title> Admin Login Page</title>
+	<link rel="stylesheet" a href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+    
+<body>
+	<nav class="navtop">
+			<div>
+				<h1 style="font-family: 'Ubuntu', sans-serif;">ADMIN PAGE</h1>
+				<a href="logout.php" style="font-family: 'Ubuntu', sans-serif;"><i class="fas fa-sign-out-alt"></i>Back</a>
+			</div>
+		</nav>
+	<div class="container">
+        
+        <img src="person_icon.png">
+        
+		<form action="authenticate.php" method="post">
+            
+            <div class="form_input">
+              <input type="text" name="username" placeholder="Please enter your username" id="username" required/>	 
+            </div>
+            
+            <div class="form_input">
+              <input type="password" name="password" placeholder="Password" id="password" required/>
+            </div>
+            
+            <input type="submit" type="submit" value="LOGIN" class="btn-login"/>
+            
+		</form>
+        
+	</div>
+    
+</body>
+    
+</html>
